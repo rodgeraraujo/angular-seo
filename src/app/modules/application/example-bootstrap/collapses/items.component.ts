@@ -5,7 +5,7 @@ declare var bootstrap: any;
 @Component({
   selector: 'app-collapse',
   templateUrl: './items.component.html',
-  styleUrls: ['./items.component.css']
+  styleUrls: ['./items.component.scss']
 })
 export class CollapsesComponent implements OnInit {
 

@@ -8,7 +8,10 @@
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
-        }
+        },
+        "@schematics/angular:component": {
+          "styleext": "scss"       
+        }  
       },
       "root": "",
       "sourceRoot": "src",
@@ -32,8 +35,8 @@
             "styles": [
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/assets/params/css/fonts.googleapis.min.css",
-              "src/styles.css"
+              "src/assets/params/css/fonts.googleapis.min.scss",
+              "src/styles.scss"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -105,7 +108,7 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }

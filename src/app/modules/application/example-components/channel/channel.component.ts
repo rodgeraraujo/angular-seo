@@ -5,7 +5,7 @@ import { Channel } from './channel';
 @Component({
   selector: 'app-channel',
   templateUrl: './channel.component.html',
-  styleUrls: ['./channel.component.css']
+  styleUrls: ['./channel.component.scss']
 })
 export class ChannelComponent {
 

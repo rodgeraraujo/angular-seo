@@ -1,0 +1,44 @@
+.card {
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.nga-card-header {
+	padding: 0.5rem 1rem;
+	margin-bottom: 0;
+	background-color: white;
+}
+.nga-card-rotate {
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	perspective: 800px;
+	margin-bottom: 30px;
+	a {
+		text-decoration: none;
+	}
+	&:not(.manual-flip) {
+		&:hover {
+			.card {
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
+				-o-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+			}
+		}
+	}
+}
+.nga-card-rotate.hover.manual-flip {
+	.card {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+}

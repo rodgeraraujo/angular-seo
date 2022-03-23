@@ -5,7 +5,7 @@ import { Channel } from './channel/channel';
 @Component({
   selector: 'app-example-components',
   templateUrl: './tutorial.component.html',
-  styleUrls: ['./tutorial.component.css']
+  styleUrls: ['./tutorial.component.scss']
 })
 export class TutorialComponent implements OnInit {
 
